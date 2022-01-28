@@ -98,28 +98,28 @@
 		};
 	};
 
-	leds {
-		compatible = "gpio-leds";
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_gpio_leds>;
-		status = "disabled"; /* Conflict with pwm0. */
+	// leds {
+	// 	compatible = "gpio-leds";
+	// 	pinctrl-names = "default";
+	// 	pinctrl-0 = <&pinctrl_gpio_leds>;
+	// 	status = "disabled"; /* Conflict with pwm0. */
 
-		red {
-			label = "red";
-			gpios = <&pioB 11 GPIO_ACTIVE_HIGH>;
-		};
+	// 	red {
+	// 		label = "red";
+	// 		gpios = <&pioB 11 GPIO_ACTIVE_HIGH>;
+	// 	};
 
-		green {
-			label = "green";
-			gpios = <&pioB 12 GPIO_ACTIVE_HIGH>;
-		};
+	// 	green {
+	// 		label = "green";
+	// 		gpios = <&pioB 12 GPIO_ACTIVE_HIGH>;
+	// 	};
 
-		blue {
-			label = "blue";
-			gpios = <&pioB 13 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
-		};
-	};
+	// 	blue {
+	// 		label = "blue";
+	// 		gpios = <&pioB 13 GPIO_ACTIVE_HIGH>;
+	// 		linux,default-trigger = "heartbeat";
+	// 	};
+	// };
 
 	jolp {
 		compatible = "gpio-leds";
@@ -749,15 +749,15 @@
 	status = "okay";
 };
 
-&usb1 {
-	num-ports = <3>;
-	atmel,vbus-gpio = <0
-			   &pioD 15 GPIO_ACTIVE_HIGH
-			   &pioD 16 GPIO_ACTIVE_HIGH>;
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_usb_default>;
-	status = "disabled";
-};
+// &usb1 {
+// 	num-ports = <3>;
+// 	atmel,vbus-gpio = <0
+// 			   &pioD 15 GPIO_ACTIVE_HIGH
+// 			   &pioD 16 GPIO_ACTIVE_HIGH>;
+// 	pinctrl-names = "default";
+// 	pinctrl-0 = <&pinctrl_usb_default>;
+// 	status = "disabled";
+// };
 
 &usb2 {
 	status = "disabled";
